@@ -7,7 +7,12 @@ function Clock() {
     setInterval(() => {
       setTime(new Date());
     }, 1000);
+    
+    console.log(time)
+
   }, []);
+
+  // console.log(time)
 
   return <div>{time.toString()}</div>;
 }
